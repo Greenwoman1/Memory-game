@@ -13,7 +13,6 @@ const OdabirTeme = ({ username, setOdabirVisible }) => {
   const [tema, setTema] = useState("");
   const user = username;
 
-  // Funkcija za miješanje slika
   const shuffleArray = (array) => {
     console.log(array);
     const newArray = [...array];

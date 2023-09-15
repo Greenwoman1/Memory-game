@@ -7,7 +7,6 @@ const Result = ({ username, pogodjeniParovi, time, cat }) => {
   const category = cat;
 
   useEffect(() => {
-    // Slanje GET zahtjeva za dohvat sortiranih rezultata za odabranu kategoriju
     axios
       .get(`http://127.0.0.1:8000/result/get_all_result/${category}/`)
       .then((response) => {
