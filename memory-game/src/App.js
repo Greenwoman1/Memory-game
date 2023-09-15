@@ -1,20 +1,15 @@
-
-import Home from "./Pages/Home"
-import Result from "./Pages/Result"
-import {BrowserRouter, Route, Routes} from "react-router-dom"
-import './App.css';
+import Home from "./Pages/Home";
+import Result from "./Pages/Result";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
-    
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path ="/" element = {<Home></Home>}></Route>
-        <Route path ="/result" element = {<Result></Result>}></Route>
-
-        </Routes>
-      </BrowserRouter>
-
-   
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/result" element={<Result></Result>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
